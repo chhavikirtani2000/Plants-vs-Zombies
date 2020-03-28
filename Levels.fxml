@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:controller="sample.LevelsController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="418.0" prefWidth="607.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" >
+    <children>
+        <ImageView fitHeight="424.0" fitWidth="614.0" layoutX="-2.0" layoutY="-1.0">
+            <image>
+                <Image url="Level.jpeg" />
+            </image>
+        </ImageView>
+        <Button fx:id="playgame" layoutX="275.0" layoutY="215.0" mnemonicParsing="false" onMouseClicked="#Viewgamepage" prefHeight="25.0" prefWidth="59.0" style="-fx-background-color: chartreuse;" text="PLAY">
+            <font>
+                <Font name="Arial Bold Italic" size="12.0" />
+            </font>
+        </Button>
+        <Button fx:id="backtomenu" layoutX="5.0" layoutY="355.0" mnemonicParsing="false" onMouseClicked="#ViewMainmenu" prefHeight="53.0" prefWidth="50.0" style="-fx-background-color: chartreuse;" text="BACK">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Button>
+    </children>
+</AnchorPane>

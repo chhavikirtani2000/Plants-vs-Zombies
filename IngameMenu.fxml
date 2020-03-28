@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:controller="sample.IngameController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="413.0" prefWidth="607.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" >
+    <children>
+        <ImageView fitHeight="419.0" fitWidth="614.0" layoutX="-2.0" layoutY="-1.0">
+            <image>
+                <Image url="@Ingamemenu.jpeg" />
+            </image>
+        </ImageView>
+        <Button fx:id="ViewMainMenu" layoutX="172.0" layoutY="269.0" mnemonicParsing="false" onMouseClicked="#ViewMainMenu" prefHeight="16.0" prefWidth="111.0" style="-fx-opacity: 1; -fx-background-color: darkgrey;" text="MAIN MENU">
+            <font>
+                <Font name="Bodoni MT Bold" size="12.0" />
+            </font>
+        </Button>
+        <Button fx:id="InBackToGame" layoutX="313.0" layoutY="269.0" mnemonicParsing="false" onMouseClicked="#ViewGamePage" prefHeight="16.0" prefWidth="111.0" style="-fx-opacity: 1; -fx-background-color: darkgrey;" text="BACK TO GAME">
+            <font>
+                <Font name="Bodoni MT Bold" size="12.0" />
+            </font>
+        </Button>
+        <Button fx:id="InSaveGame" layoutX="172.0" layoutY="303.0" mnemonicParsing="false" onMouseClicked="#SaveGamePage" prefHeight="16.0" prefWidth="111.0" style="-fx-opacity: 1; -fx-background-color: darkgrey;" text="SAVE GAME">
+            <font>
+                <Font name="Bodoni MT Bold" size="12.0" />
+            </font>
+        </Button>
+        <Button fx:id="InExit" layoutX="313.0" layoutY="304.0" mnemonicParsing="false" onMouseClicked="#ExitGame" prefHeight="16.0" prefWidth="111.0" style="-fx-opacity: 1; -fx-background-color: darkgrey;" text="EXIT GAME">
+            <font>
+                <Font name="Bodoni MT Bold" size="12.0" />
+            </font>
+        </Button>
+        <CheckBox layoutX="290.0" layoutY="203.0" mnemonicParsing="false" />
+        <CheckBox layoutX="437.0" layoutY="202.0" mnemonicParsing="false" style="-fx-background-color: black;" />
+        <Slider layoutX="326.0" layoutY="120.0" prefHeight="31.0" prefWidth="143.0" style="-fx-background-color: black;" />
+        <Slider layoutX="326.0" layoutY="158.0" prefHeight="31.0" prefWidth="143.0" style="-fx-background-color: black;" />
+        <Separator layoutX="201.0" layoutY="240.0" prefHeight="10.0" prefWidth="209.0" style="-fx-background-color: lightcyan;" />
+    </children>
+</AnchorPane>

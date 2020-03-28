@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="gamee" fx:id="gamee" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="body" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <children>
+      <ImageView fx:id="hi" fitHeight="72.0" fitWidth="56.0" layoutX="252.0" layoutY="62.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView id="newsz" fx:id="newsz" fitHeight="80.0" fitWidth="50.0" layoutX="473.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@peashooter.gif" />
+         </image>
+      </ImageView>
+        <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+        <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+        <ImageView fitHeight="19.0" fitWidth="46.0" layoutX="82.0" layoutY="69.0" pickOnBounds="true" preserveRatio="true" />
+        <ImageView fitHeight="435.0" fitWidth="615.0" layoutX="-11.0" layoutY="-15.0">
+            <image>
+                <Image url="@WhatsApp%20Image%202019-11-02%20at%203.15.36%20PM.jpeg" />
+            </image>
+        </ImageView>
+        <Button id="ingame" fx:id="ingame" layoutX="487.0" layoutY="1.0" mnemonicParsing="false" onMouseClicked="#toingame" opacity="0.03" prefHeight="60.0" prefWidth="115.0" text="Button" />
+        <Label layoutX="130.0" layoutY="8.0" text="75">
+            <font>
+                <Font size="25.0" />
+            </font>
+        </Label>
+        <ImageView id="icon3" fx:id="icon3" fitHeight="56.0" fitWidth="62.0" layoutY="183.0" onDragDetected="#PlaceCherryBomb" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@cherrybombicon.png" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="icon2" fitHeight="67.0" fitWidth="64.0" layoutY="132.0" onDragDetected="#PlaceRepeater" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@repeatericon.png" />
+            </image>
+        </ImageView>
+        <ImageView id="icon1" fx:id="icon1" fitHeight="41.0" fitWidth="62.0" layoutY="41.0" onDragDetected="#PlacePlant" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@peashootericon.png" />
+            </image>
+        </ImageView>
+        <ImageView id="icon4" fx:id="icon4" fitHeight="41.0" fitWidth="62.0" layoutX="4.0" layoutY="276.0" onDragDetected="#PlacePotato" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@potatomineicon.png" />
+            </image>
+        </ImageView>
+        <ImageView id="icon5" fx:id="icon5" fitHeight="41.0" fitWidth="62.0" layoutX="1.0" layoutY="85.0" onDragDetected="#PlaceSunflower" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@sunflowericon.png" />
+            </image>
+        </ImageView>
+        <ImageView id="icon6" fx:id="icon6" fitHeight="49.0" fitWidth="62.0" layoutX="4.0" layoutY="228.0" onDragDetected="#PlaceWalnut" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@wallnuticon.png" />
+            </image>
+        </ImageView>
+        <ImageView id="lawnmowerr1" fx:id="lawnmowerr1" fitHeight="50.0" fitWidth="64.0" layoutX="65.0" layoutY="308.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@lawnmower.png" />
+            </image>
+        </ImageView>
+        <ImageView id="lawnmowerr2" fx:id="lawnmowerr2" fitHeight="50.0" fitWidth="64.0" layoutX="65.0" layoutY="251.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@lawnmower.png" />
+            </image>
+        </ImageView>
+        <ImageView id="lawnmowerr3" fx:id="lawnmowerr3" fitHeight="50.0" fitWidth="64.0" layoutX="71.0" layoutY="183.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@lawnmower.png" />
+            </image>
+        </ImageView>
+        <ImageView id="lawnmowerr4" fx:id="lawnmowerr4" fitHeight="50.0" fitWidth="64.0" layoutX="65.0" layoutY="121.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@lawnmower.png" />
+            </image>
+        </ImageView>
+        <ImageView id="lawnmowerr5" fx:id="lawnmowerr5" fitHeight="50.0" fitWidth="64.0" layoutX="65.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@lawnmower.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="82.0" fitWidth="65.0" layoutX="462.0" layoutY="129.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@grapsspatch.jpeg" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="82.0" fitWidth="65.0" layoutX="404.0" layoutY="129.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@grapsspatch.jpeg" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="82.0" fitWidth="65.0" layoutX="364.0" layoutY="129.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@grapsspatch.jpeg" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="82.0" fitWidth="65.0" layoutX="332.0" layoutY="129.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@grapsspatch.jpeg" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="82.0" fitWidth="65.0" layoutX="283.0" layoutY="129.0" onDragDropped="#GrassPlant" onDragOver="#Seeded" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@grapsspatch.jpeg" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="82.0" fitWidth="65.0" layoutX="237.0" layoutY="129.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@grapsspatch.jpeg" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="82.0" fitWidth="65.0" layoutX="196.0" layoutY="129.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@grapsspatch.jpeg" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="82.0" fitWidth="65.0" layoutX="146.0" layoutY="129.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@grapsspatch.jpeg" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="82.0" fitWidth="60.0" layoutX="127.0" layoutY="131.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@grapsspatch.jpeg" />
+            </image>
+        </ImageView>
+        <ImageView id="g2" fx:id="g2" fitHeight="82.0" fitWidth="70.0" layoutX="458.0" layoutY="68.0" onDragDropped="#GrassPlant" onDragOver="#Seeded" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@grapsspatch.jpeg" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="82.0" fitWidth="70.0" layoutX="402.0" layoutY="68.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@grapsspatch.jpeg" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="82.0" fitWidth="70.0" layoutX="361.0" layoutY="68.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@grapsspatch.jpeg" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="82.0" fitWidth="70.0" layoutX="318.0" layoutY="68.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@grapsspatch.jpeg" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="82.0" fitWidth="70.0" layoutX="283.0" layoutY="68.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@grapsspatch.jpeg" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="82.0" fitWidth="70.0" layoutX="235.0" layoutY="68.0" onDragDropped="#GrassPlant" onDragOver="#Seeded" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@grapsspatch.jpeg" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="82.0" fitWidth="70.0" layoutX="187.0" layoutY="68.0" onDragDropped="#GrassPlant" onDragOver="#Seeded" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@grapsspatch.jpeg" />
+            </image>
+        </ImageView>
+        <ImageView id="g1" fx:id="g1" fitHeight="82.0" fitWidth="70.0" layoutX="131.0" layoutY="68.0" onDragDropped="#GrassPlant" onDragOver="#Seeded" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@grapsspatch.jpeg" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="82.0" fitWidth="65.0" layoutX="462.0" layoutY="258.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@grapsspatch.jpeg" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="82.0" fitWidth="65.0" layoutX="412.0" layoutY="258.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@grapsspatch.jpeg" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="82.0" fitWidth="65.0" layoutX="379.0" layoutY="258.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@grapsspatch.jpeg" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="82.0" fitWidth="65.0" layoutX="332.0" layoutY="258.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@grapsspatch.jpeg" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="82.0" fitWidth="65.0" layoutX="286.0" layoutY="258.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@grapsspatch.jpeg" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="82.0" fitWidth="65.0" layoutX="238.0" layoutY="258.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@grapsspatch.jpeg" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="82.0" fitWidth="65.0" layoutX="203.0" layoutY="258.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@grapsspatch.jpeg" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="82.0" fitWidth="65.0" layoutX="155.0" layoutY="258.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@grapsspatch.jpeg" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="82.0" fitWidth="65.0" layoutX="125.0" layoutY="258.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@grapsspatch.jpeg" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="82.0" fitWidth="65.0" layoutX="462.0" layoutY="316.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@grapsspatch.jpeg" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="82.0" fitWidth="65.0" layoutX="412.0" layoutY="316.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@grapsspatch.jpeg" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="82.0" fitWidth="65.0" layoutX="380.0" layoutY="316.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@grapsspatch.jpeg" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="82.0" fitWidth="65.0" layoutX="332.0" layoutY="316.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@grapsspatch.jpeg" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="82.0" fitWidth="65.0" layoutX="286.0" layoutY="316.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@grapsspatch.jpeg" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="82.0" fitWidth="65.0" layoutX="238.0" layoutY="316.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@grapsspatch.jpeg" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="82.0" fitWidth="65.0" layoutX="205.0" layoutY="316.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@grapsspatch.jpeg" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="82.0" fitWidth="65.0" layoutX="158.0" layoutY="316.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@grapsspatch.jpeg" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="82.0" fitWidth="65.0" layoutX="123.0" layoutY="316.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@grapsspatch.jpeg" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="60.0" fitWidth="111.0" layoutX="489.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@ingamemenu.jpeg" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="50.0" fitWidth="150.0" layoutX="56.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@sunboard.jpeg" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="35.0" fitWidth="111.0" layoutX="123.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@wood.jpeg" />
+            </image>
+        </ImageView>
+        <Label fx:id="score" layoutX="132.0" layoutY="11.0" text="25">
+            <font>
+                <Font size="22.0" />
+            </font>
+        </Label>
+        <ImageView fitHeight="65.0" fitWidth="111.0" layoutX="126.0" layoutY="244.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@peashooter.gif" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="55.0" fitWidth="70.0" layoutX="201.0" layoutY="124.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@sunflower.gif" />
+            </image>
+        </ImageView>
+        <Circle fx:id="pea1" fill="#2cd320" layoutX="191.0" layoutY="258.0" radius="13.0" stroke="BLACK" strokeType="INSIDE" />
+        <Slider id="sliderr" fx:id="sliderr" layoutX="318.0" layoutY="6.0" />
+        <Label layoutX="331.0" layoutY="20.0" text="Zombie Wave">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+        </Label>
+        <ImageView id="sun2" fitHeight="45.0" fitWidth="46.0" layoutX="238.0" layoutY="110.0" pickOnBounds="true" preserveRatio="true" visible="false">
+            <image>
+                <Image url="@sun.png" />
+            </image>
+        </ImageView>
+      <ImageView id="newspaper" fx:id="newspaper" fitHeight="80.0" fitWidth="90.0" layoutX="465.0" layoutY="278.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@Newspaper.gif" />
+         </image>
+      </ImageView>
+      <ImageView id="tryzombie" fx:id="tryzombie" fitHeight="79.0" fitWidth="70.0" layoutX="528.0" layoutY="294.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@cone-head-zombie.gif" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="tryz2" fitHeight="80.0" fitWidth="59.0" layoutX="359.0" layoutY="55.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@Newspaper.gif" />
+         </image>
+      </ImageView>
+        <ImageView fx:id="tryz22" fitHeight="80.0" fitWidth="59.0" layoutX="528.0" layoutY="55.0" pickOnBounds="true" preserveRatio="true" visible="false">
+            <image>
+                <Image url="@Newspaper.gif" />
+            </image>
+        </ImageView>
+      <ImageView id="sunn2" fx:id="sunn2" fitHeight="50.0" fitWidth="60.0" layoutX="261.0" layoutY="12.0" onMouseClicked="#incrementsun" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@sun.png" />
+         </image>
+      </ImageView>
+        <ImageView id="sunn3" fx:id="sunn3" fitHeight="50.0" fitWidth="60.0" layoutX="261.0" layoutY="12.0" onMouseClicked="#incrementsun" pickOnBounds="true" preserveRatio="true" visible="false">
+            <image>
+                <Image url="@sun.png" />
+            </image>
+        </ImageView>
+        <ImageView id="sunn4" fx:id="sunn4" fitHeight="50.0" fitWidth="60.0" layoutX="261.0" layoutY="12.0" onMouseClicked="#incrementsun" pickOnBounds="true" preserveRatio="true" visible="false">
+            <image>
+                <Image url="@sun.png" />
+            </image>
+        </ImageView>
+        <ImageView id="sunn5" fx:id="sunn5" fitHeight="50.0" fitWidth="60.0" layoutX="261.0" layoutY="12.0" onMouseClicked="#incrementsun" pickOnBounds="true" preserveRatio="true" visible="false">
+            <image>
+                <Image url="@sun.png" />
+            </image>
+        </ImageView>
+      <ImageView fx:id="normzombie" fitHeight="80.0" fitWidth="65.0" layoutX="461.0" layoutY="54.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@easy_normal_zombie_walking.gif" />
+         </image>
+      </ImageView>
+        <ImageView fx:id="normzombie2" fitHeight="80.0" fitWidth="65.0" layoutX="461.0" layoutY="54.0" pickOnBounds="true" preserveRatio="true" visible="false">
+            <image>
+                <Image url="@easy_normal_zombie_walking.gif" />
+            </image>
+        </ImageView>
+      <ImageView id="vtry" fx:id="vtry" fitHeight="80.0" fitWidth="62.0" layoutX="476.0" layoutY="227.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@cone-head-zombie.gif" />
+         </image>
+      </ImageView>
+      <ImageView id="wave1" fx:id="wave1" fitHeight="65.0" fitWidth="56.0" layoutX="530.0" layoutY="119.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@easy_normal_zombie_walking.gif" />
+         </image>
+      </ImageView>
+      <ImageView id="wave2" fx:id="wave2" fitHeight="65.0" fitWidth="60.0" layoutX="525.0" layoutY="189.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@Newspaper.gif" />
+         </image>
+      </ImageView>
+      <ImageView id="wave3" fx:id="wave3" fitHeight="80.0" fitWidth="65.0" layoutX="536.0" layoutY="58.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@cone-head-zombie.gif" />
+         </image>
+      </ImageView>
+      <ImageView id="sun4" fx:id="sun4" fitHeight="79.0" fitWidth="70.0" layoutX="185.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@sun.png" />
+         </image>
+      </ImageView>
+      <ImageView id="sun3" fx:id="sun3" fitHeight="70.0" fitWidth="59.0" layoutX="429.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@sun.png" />
+         </image>
+      </ImageView>
+      <ImageView id="sun5" fx:id="sun5" fitHeight="80.0" fitWidth="56.0" layoutX="497.0" layoutY="46.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@sun.png" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>
